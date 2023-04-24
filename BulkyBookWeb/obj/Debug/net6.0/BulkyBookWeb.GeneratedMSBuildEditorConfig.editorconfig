@@ -11,9 +11,17 @@ build_property.RootNamespace = BulkyBookWeb
 build_property.ProjectDir = /home/bs653/c#projects/BulkyBook/BulkyBookWeb/
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
-build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
 build_property.MSBuildProjectDirectory = /home/bs653/c#projects/BulkyBook/BulkyBookWeb
 build_property._RazorSourceGeneratorDebug = 
+
+[/home/bs653/c\#projects/BulkyBook/BulkyBookWeb/Views/Category/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcnkvQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/bs653/c\#projects/BulkyBook/BulkyBookWeb/Views/Category/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcnkvRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
 
 [/home/bs653/c\#projects/BulkyBook/BulkyBookWeb/Views/Category/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2F0ZWdvcnkvSW5kZXguY3NodG1s

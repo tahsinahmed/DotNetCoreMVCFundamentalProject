@@ -59,6 +59,71 @@
           }
         }
       },
+      "Microsoft.AspNetCore.Mvc.Razor.Extensions/6.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Razor.Language": "6.0.3",
+          "Microsoft.CodeAnalysis.Razor": "6.0.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Razor.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Razor.Extensions.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation/6.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc.Razor.Extensions": "6.0.3",
+          "Microsoft.CodeAnalysis.Razor": "6.0.3",
+          "Microsoft.Extensions.DependencyModel": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ],
+        "build": {
+          "buildTransitive/net6.0/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.targets": {}
+        }
+      },
+      "Microsoft.AspNetCore.Razor.Language/6.0.3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Razor.Language.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Razor.Language.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.TestHost/6.0.3": {
+        "type": "package",
+        "dependencies": {
+          "System.IO.Pipelines": "6.0.2"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.AspNetCore.TestHost.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.AspNetCore.TestHost.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
       "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
         "type": "package",
         "compile": {
@@ -70,7 +135,147 @@
           }
         }
       },
-      "Microsoft.CSharp/4.5.0": {
+      "Microsoft.CodeAnalysis.Analyzers/3.3.2": {
+        "type": "package",
+        "build": {
+          "build/_._": {}
+        }
+      },
+      "Microsoft.CodeAnalysis.Common/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CodeAnalysis.Analyzers": "3.3.2",
+          "System.Collections.Immutable": "5.0.0",
+          "System.Memory": "4.5.4",
+          "System.Reflection.Metadata": "5.0.0",
+          "System.Runtime.CompilerServices.Unsafe": "5.0.0",
+          "System.Text.Encoding.CodePages": "4.5.1",
+          "System.Threading.Tasks.Extensions": "4.5.4"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.CodeAnalysis.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.CodeAnalysis.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "resource": {
+          "lib/netcoreapp3.1/cs/Microsoft.CodeAnalysis.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netcoreapp3.1/de/Microsoft.CodeAnalysis.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netcoreapp3.1/es/Microsoft.CodeAnalysis.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netcoreapp3.1/fr/Microsoft.CodeAnalysis.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netcoreapp3.1/it/Microsoft.CodeAnalysis.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netcoreapp3.1/ja/Microsoft.CodeAnalysis.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netcoreapp3.1/ko/Microsoft.CodeAnalysis.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netcoreapp3.1/pl/Microsoft.CodeAnalysis.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netcoreapp3.1/pt-BR/Microsoft.CodeAnalysis.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netcoreapp3.1/ru/Microsoft.CodeAnalysis.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netcoreapp3.1/tr/Microsoft.CodeAnalysis.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netcoreapp3.1/zh-Hans/Microsoft.CodeAnalysis.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "Microsoft.CodeAnalysis.CSharp/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CodeAnalysis.Common": "[4.0.0]"
+        },
+        "compile": {
+          "lib/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "resource": {
+          "lib/netcoreapp3.1/cs/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "locale": "cs"
+          },
+          "lib/netcoreapp3.1/de/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netcoreapp3.1/es/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netcoreapp3.1/fr/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netcoreapp3.1/it/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "locale": "it"
+          },
+          "lib/netcoreapp3.1/ja/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/netcoreapp3.1/ko/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/netcoreapp3.1/pl/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "locale": "pl"
+          },
+          "lib/netcoreapp3.1/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netcoreapp3.1/ru/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/netcoreapp3.1/tr/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/netcoreapp3.1/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "locale": "zh-Hans"
+          },
+          "lib/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll": {
+            "locale": "zh-Hant"
+          }
+        }
+      },
+      "Microsoft.CodeAnalysis.Razor/6.0.3": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Razor.Language": "6.0.3",
+          "Microsoft.CodeAnalysis.CSharp": "4.0.0",
+          "Microsoft.CodeAnalysis.Common": "4.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.CodeAnalysis.Razor.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.CodeAnalysis.Razor.dll": {}
+        }
+      },
+      "Microsoft.CSharp/4.7.0": {
         "type": "package",
         "compile": {
           "ref/netcoreapp2.0/_._": {}
@@ -135,6 +340,19 @@
           "runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll": {
             "assetType": "native",
             "rid": "win-x86"
+          }
+        }
+      },
+      "Microsoft.DotNet.PlatformAbstractions/3.1.6": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.DotNet.PlatformAbstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.DotNet.PlatformAbstractions.dll": {
+            "related": ".xml"
           }
         }
       },
@@ -293,6 +511,23 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
+      "Microsoft.Extensions.Configuration/6.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Primitives": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Extensions.Configuration.Abstractions/8.0.0-preview.3.23174.8": {
         "type": "package",
         "dependencies": {
@@ -310,6 +545,62 @@
         },
         "build": {
           "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.Configuration.Binder/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration.Abstractions": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration.FileExtensions/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "6.0.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
+          "Microsoft.Extensions.FileProviders.Abstractions": "6.0.0",
+          "Microsoft.Extensions.FileProviders.Physical": "6.0.0",
+          "Microsoft.Extensions.Primitives": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration.Json/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "6.0.0",
+          "Microsoft.Extensions.Configuration.Abstractions": "6.0.0",
+          "Microsoft.Extensions.Configuration.FileExtensions": "6.0.0",
+          "Microsoft.Extensions.FileProviders.Abstractions": "6.0.0",
+          "System.Text.Json": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/Microsoft.Extensions.Configuration.Json.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.Extensions.Configuration.Json.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Microsoft.Extensions.DependencyInjection/8.0.0-preview.3.23174.8": {
@@ -354,7 +645,7 @@
           "System.Text.Json": "8.0.0-preview.3.23174.8"
         },
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net6.0/Microsoft.Extensions.DependencyModel.dll": {
             "related": ".xml"
           }
         },
@@ -365,6 +656,62 @@
         },
         "build": {
           "buildTransitive/net6.0/_._": {}
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Abstractions/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.FileProviders.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "Microsoft.Extensions.FileProviders.Physical/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.FileProviders.Abstractions": "6.0.0",
+          "Microsoft.Extensions.FileSystemGlobbing": "6.0.0",
+          "Microsoft.Extensions.Primitives": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/Microsoft.Extensions.FileProviders.Physical.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.FileProviders.Physical.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
+      "Microsoft.Extensions.FileSystemGlobbing/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/Microsoft.Extensions.FileSystemGlobbing.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/Microsoft.Extensions.FileSystemGlobbing.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
       "Microsoft.Extensions.Logging/8.0.0-preview.3.23174.8": {
@@ -641,6 +988,365 @@
           "lib/netstandard2.0/Mono.TextTemplating.dll": {}
         }
       },
+      "MyTested.AspNetCore.Mvc.Abstractions/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.TestHost": "6.0.3",
+          "Microsoft.CSharp": "4.7.0",
+          "Microsoft.DotNet.PlatformAbstractions": "3.1.6",
+          "Microsoft.Extensions.Configuration.Json": "6.0.0",
+          "Microsoft.Extensions.DependencyModel": "6.0.0",
+          "MyTested.AspNetCore.Mvc.Configuration": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/MyTested.AspNetCore.Mvc.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MyTested.AspNetCore.Mvc.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MyTested.AspNetCore.Mvc.Configuration/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "6.0.1",
+          "Microsoft.Extensions.Configuration.Binder": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/MyTested.AspNetCore.Mvc.Configuration.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MyTested.AspNetCore.Mvc.Configuration.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MyTested.AspNetCore.Mvc.Controllers/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "MyTested.AspNetCore.Mvc.Abstractions": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/MyTested.AspNetCore.Mvc.Controllers.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MyTested.AspNetCore.Mvc.Controllers.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MyTested.AspNetCore.Mvc.Controllers.ActionResults/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "MyTested.AspNetCore.Mvc.Controllers": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/MyTested.AspNetCore.Mvc.Controllers.ActionResults.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MyTested.AspNetCore.Mvc.Controllers.ActionResults.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MyTested.AspNetCore.Mvc.Controllers.Attributes/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "MyTested.AspNetCore.Mvc.Controllers": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/MyTested.AspNetCore.Mvc.Controllers.Attributes.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MyTested.AspNetCore.Mvc.Controllers.Attributes.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MyTested.AspNetCore.Mvc.Controllers.Views/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "MyTested.AspNetCore.Mvc.Controllers": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/MyTested.AspNetCore.Mvc.Controllers.Views.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MyTested.AspNetCore.Mvc.Controllers.Views.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MyTested.AspNetCore.Mvc.Controllers.Views.ActionResults/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "MyTested.AspNetCore.Mvc.Controllers.Views": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/MyTested.AspNetCore.Mvc.Controllers.Views.ActionResults.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MyTested.AspNetCore.Mvc.Controllers.Views.ActionResults.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MyTested.AspNetCore.Mvc.Core/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "MyTested.AspNetCore.Mvc.Controllers": "6.0.0",
+          "MyTested.AspNetCore.Mvc.Controllers.ActionResults": "6.0.0",
+          "MyTested.AspNetCore.Mvc.Controllers.Attributes": "6.0.0",
+          "MyTested.AspNetCore.Mvc.Models": "6.0.0",
+          "MyTested.AspNetCore.Mvc.Pipeline": "6.0.0",
+          "MyTested.AspNetCore.Mvc.Routing": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/MyTested.AspNetCore.Mvc.Core.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MyTested.AspNetCore.Mvc.Core.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MyTested.AspNetCore.Mvc.DataAnnotations/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "MyTested.AspNetCore.Mvc.Core": "6.0.0",
+          "MyTested.AspNetCore.Mvc.ModelState": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/MyTested.AspNetCore.Mvc.DataAnnotations.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MyTested.AspNetCore.Mvc.DataAnnotations.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MyTested.AspNetCore.Mvc.Helpers/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "MyTested.AspNetCore.Mvc.Controllers.ActionResults": "6.0.0",
+          "MyTested.AspNetCore.Mvc.Controllers.Views.ActionResults": "6.0.0",
+          "MyTested.AspNetCore.Mvc.DataAnnotations": "6.0.0",
+          "MyTested.AspNetCore.Mvc.Models": "6.0.0",
+          "MyTested.AspNetCore.Mvc.ViewComponents.Results": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/MyTested.AspNetCore.Mvc.Helpers.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MyTested.AspNetCore.Mvc.Helpers.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MyTested.AspNetCore.Mvc.Http/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "MyTested.AspNetCore.Mvc.Abstractions": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/MyTested.AspNetCore.Mvc.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MyTested.AspNetCore.Mvc.Http.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MyTested.AspNetCore.Mvc.Models/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "MyTested.AspNetCore.Mvc.Abstractions": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/MyTested.AspNetCore.Mvc.Models.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MyTested.AspNetCore.Mvc.Models.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MyTested.AspNetCore.Mvc.ModelState/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "MyTested.AspNetCore.Mvc.Abstractions": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/MyTested.AspNetCore.Mvc.ModelState.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MyTested.AspNetCore.Mvc.ModelState.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MyTested.AspNetCore.Mvc.Pipeline/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "MyTested.AspNetCore.Mvc.Controllers": "6.0.0",
+          "MyTested.AspNetCore.Mvc.Routing": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/MyTested.AspNetCore.Mvc.Pipeline.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MyTested.AspNetCore.Mvc.Pipeline.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MyTested.AspNetCore.Mvc.Razor.RuntimeCompilation/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "6.0.3",
+          "MyTested.AspNetCore.Mvc.ViewFeatures": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/MyTested.AspNetCore.Mvc.Razor.RuntimeCompilation.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MyTested.AspNetCore.Mvc.Razor.RuntimeCompilation.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MyTested.AspNetCore.Mvc.Routing/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "MyTested.AspNetCore.Mvc.Http": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/MyTested.AspNetCore.Mvc.Routing.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MyTested.AspNetCore.Mvc.Routing.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MyTested.AspNetCore.Mvc.TempData/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "MyTested.AspNetCore.Mvc.Abstractions": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/MyTested.AspNetCore.Mvc.TempData.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MyTested.AspNetCore.Mvc.TempData.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MyTested.AspNetCore.Mvc.ViewComponents/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "MyTested.AspNetCore.Mvc.Abstractions": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/MyTested.AspNetCore.Mvc.ViewComponents.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MyTested.AspNetCore.Mvc.ViewComponents.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MyTested.AspNetCore.Mvc.ViewComponents.Results/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "MyTested.AspNetCore.Mvc.ViewComponents": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/MyTested.AspNetCore.Mvc.ViewComponents.Results.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MyTested.AspNetCore.Mvc.ViewComponents.Results.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MyTested.AspNetCore.Mvc.ViewData/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "MyTested.AspNetCore.Mvc.Abstractions": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/MyTested.AspNetCore.Mvc.ViewData.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MyTested.AspNetCore.Mvc.ViewData.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MyTested.AspNetCore.Mvc.ViewFeatures/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "MyTested.AspNetCore.Mvc.Controllers.Views.ActionResults": "6.0.0",
+          "MyTested.AspNetCore.Mvc.DataAnnotations": "6.0.0",
+          "MyTested.AspNetCore.Mvc.Helpers": "6.0.0",
+          "MyTested.AspNetCore.Mvc.TempData": "6.0.0",
+          "MyTested.AspNetCore.Mvc.ViewComponents.Results": "6.0.0",
+          "MyTested.AspNetCore.Mvc.ViewData": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/MyTested.AspNetCore.Mvc.ViewFeatures.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MyTested.AspNetCore.Mvc.ViewFeatures.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "System.CodeDom/4.4.0": {
         "type": "package",
         "compile": {
@@ -650,6 +1356,19 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.CodeDom.dll": {}
+        }
+      },
+      "System.Collections.Immutable/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/System.Collections.Immutable.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Collections.Immutable.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Configuration.ConfigurationManager/6.0.1": {
@@ -750,6 +1469,22 @@
           }
         }
       },
+      "System.IO.Pipelines/6.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/System.IO.Pipelines.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/System.IO.Pipelines.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/netcoreapp3.1/_._": {}
+        }
+      },
       "System.Memory/4.5.4": {
         "type": "package",
         "compile": {
@@ -783,6 +1518,19 @@
         },
         "runtime": {
           "lib/netcoreapp2.0/_._": {}
+        }
+      },
+      "System.Reflection.Metadata/5.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/System.Reflection.Metadata.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Reflection.Metadata.dll": {
+            "related": ".xml"
+          }
         }
       },
       "System.Runtime/4.3.0": {
@@ -966,7 +1714,7 @@
           "System.Runtime.CompilerServices.Unsafe": "6.0.0"
         },
         "compile": {
-          "lib/net6.0/_._": {
+          "lib/net6.0/System.Text.Encoding.CodePages.dll": {
             "related": ".xml"
           }
         },
@@ -1120,6 +1868,66 @@
         "logo.png"
       ]
     },
+    "Microsoft.AspNetCore.Mvc.Razor.Extensions/6.0.3": {
+      "sha512": "Mmg/rzp3ZJWMqXHBQgZ9Q1oV50ItPgeoby4ugvEYCT5dYlHSDzu1p3CQLm+UfHk1nAfz3vsfL/LpEL7vc0PiCw==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.mvc.razor.extensions/6.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Razor.Extensions.dll",
+        "microsoft.aspnetcore.mvc.razor.extensions.6.0.3.nupkg.sha512",
+        "microsoft.aspnetcore.mvc.razor.extensions.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation/6.0.3": {
+      "sha512": "8s8dUQa2dI00qm8VoOpKWPO2Fxo8kVL9yFL8/I5NxjsGzG+XkTA6QUDBY9qtK0AN6usyE03Xo9x02gYhweowHw==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.mvc.razor.runtimecompilation/6.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "build/net6.0/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.targets",
+        "buildTransitive/net6.0/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.targets",
+        "lib/net6.0/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll",
+        "lib/net6.0/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.xml",
+        "microsoft.aspnetcore.mvc.razor.runtimecompilation.6.0.3.nupkg.sha512",
+        "microsoft.aspnetcore.mvc.razor.runtimecompilation.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Razor.Language/6.0.3": {
+      "sha512": "mO/fUczuRB10B/z7ym2TiI2arDGVSjvxqwdATbWh9l517LvrI+DkE3kAw4kQnOQvNDjKgxPlaapJV19Wbf6f6w==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.razor.language/6.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Razor.Language.dll",
+        "microsoft.aspnetcore.razor.language.6.0.3.nupkg.sha512",
+        "microsoft.aspnetcore.razor.language.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.TestHost/6.0.3": {
+      "sha512": "oeK3KFtoLslFbKyQEiQ8HgKWAmTXUlp8vtYByUmC5ysWVrNEpCrQOKACGV/uYSeC9aFvEIvVyFTcommnxrsyiA==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.testhost/6.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net6.0/Microsoft.AspNetCore.TestHost.dll",
+        "lib/net6.0/Microsoft.AspNetCore.TestHost.xml",
+        "microsoft.aspnetcore.testhost.6.0.3.nupkg.sha512",
+        "microsoft.aspnetcore.testhost.nuspec"
+      ]
+    },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
       "sha512": "yuvf07qFWFqtK3P/MRkEKLhn5r2UbSpVueRziSqj0yJQIKFwG1pq9mOayK3zE5qZCTs0CbrwL9M6R8VwqyGy2w==",
       "type": "package",
@@ -1145,10 +1953,224 @@
         "version.txt"
       ]
     },
-    "Microsoft.CSharp/4.5.0": {
-      "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
+    "Microsoft.CodeAnalysis.Analyzers/3.3.2": {
+      "sha512": "7xt6zTlIEizUgEsYAIgm37EbdkiMmr6fP6J9pDoKEpiGM4pi32BCPGr/IczmSJI9Zzp0a6HOzpr9OvpMP+2veA==",
       "type": "package",
-      "path": "microsoft.csharp/4.5.0",
+      "path": "microsoft.codeanalysis.analyzers/3.3.2",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "EULA.rtf",
+        "ThirdPartyNotices.rtf",
+        "analyzers/dotnet/cs/Microsoft.CodeAnalysis.Analyzers.dll",
+        "analyzers/dotnet/cs/Microsoft.CodeAnalysis.CSharp.Analyzers.dll",
+        "analyzers/dotnet/cs/cs/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/de/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/es/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/fr/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/it/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/ja/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/ko/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/pl/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/pt-BR/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/ru/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/tr/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/zh-Hans/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/zh-Hant/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/vb/Microsoft.CodeAnalysis.Analyzers.dll",
+        "analyzers/dotnet/vb/Microsoft.CodeAnalysis.VisualBasic.Analyzers.dll",
+        "analyzers/dotnet/vb/cs/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/vb/de/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/vb/es/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/vb/fr/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/vb/it/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/vb/ja/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/vb/ko/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/vb/pl/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/vb/pt-BR/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/vb/ru/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/vb/tr/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/vb/zh-Hans/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "analyzers/dotnet/vb/zh-Hant/Microsoft.CodeAnalysis.Analyzers.resources.dll",
+        "build/Microsoft.CodeAnalysis.Analyzers.props",
+        "build/Microsoft.CodeAnalysis.Analyzers.targets",
+        "build/config/AnalysisLevel_2_9_8_AllDisabledByDefault.editorconfig",
+        "build/config/AnalysisLevel_2_9_8_AllEnabledByDefault.editorconfig",
+        "build/config/AnalysisLevel_2_9_8_Default.editorconfig",
+        "build/config/AnalysisLevel_3_3_AllDisabledByDefault.editorconfig",
+        "build/config/AnalysisLevel_3_3_AllEnabledByDefault.editorconfig",
+        "build/config/AnalysisLevel_3_3_Default.editorconfig",
+        "build/config/AnalysisLevel_3_AllDisabledByDefault.editorconfig",
+        "build/config/AnalysisLevel_3_AllEnabledByDefault.editorconfig",
+        "build/config/AnalysisLevel_3_Default.editorconfig",
+        "documentation/Analyzer Configuration.md",
+        "documentation/Microsoft.CodeAnalysis.Analyzers.md",
+        "documentation/Microsoft.CodeAnalysis.Analyzers.sarif",
+        "editorconfig/AllRulesDefault/.editorconfig",
+        "editorconfig/AllRulesDisabled/.editorconfig",
+        "editorconfig/AllRulesEnabled/.editorconfig",
+        "editorconfig/CorrectnessRulesDefault/.editorconfig",
+        "editorconfig/CorrectnessRulesEnabled/.editorconfig",
+        "editorconfig/DataflowRulesDefault/.editorconfig",
+        "editorconfig/DataflowRulesEnabled/.editorconfig",
+        "editorconfig/LibraryRulesDefault/.editorconfig",
+        "editorconfig/LibraryRulesEnabled/.editorconfig",
+        "editorconfig/MicrosoftCodeAnalysisCompatibilityRulesDefault/.editorconfig",
+        "editorconfig/MicrosoftCodeAnalysisCompatibilityRulesEnabled/.editorconfig",
+        "editorconfig/MicrosoftCodeAnalysisCorrectnessRulesDefault/.editorconfig",
+        "editorconfig/MicrosoftCodeAnalysisCorrectnessRulesEnabled/.editorconfig",
+        "editorconfig/MicrosoftCodeAnalysisDesignRulesDefault/.editorconfig",
+        "editorconfig/MicrosoftCodeAnalysisDesignRulesEnabled/.editorconfig",
+        "editorconfig/MicrosoftCodeAnalysisDocumentationRulesDefault/.editorconfig",
+        "editorconfig/MicrosoftCodeAnalysisDocumentationRulesEnabled/.editorconfig",
+        "editorconfig/MicrosoftCodeAnalysisLocalizationRulesDefault/.editorconfig",
+        "editorconfig/MicrosoftCodeAnalysisLocalizationRulesEnabled/.editorconfig",
+        "editorconfig/MicrosoftCodeAnalysisPerformanceRulesDefault/.editorconfig",
+        "editorconfig/MicrosoftCodeAnalysisPerformanceRulesEnabled/.editorconfig",
+        "editorconfig/MicrosoftCodeAnalysisReleaseTrackingRulesDefault/.editorconfig",
+        "editorconfig/MicrosoftCodeAnalysisReleaseTrackingRulesEnabled/.editorconfig",
+        "editorconfig/PortedFromFxCopRulesDefault/.editorconfig",
+        "editorconfig/PortedFromFxCopRulesEnabled/.editorconfig",
+        "microsoft.codeanalysis.analyzers.3.3.2.nupkg.sha512",
+        "microsoft.codeanalysis.analyzers.nuspec",
+        "rulesets/AllRulesDefault.ruleset",
+        "rulesets/AllRulesDisabled.ruleset",
+        "rulesets/AllRulesEnabled.ruleset",
+        "rulesets/CorrectnessRulesDefault.ruleset",
+        "rulesets/CorrectnessRulesEnabled.ruleset",
+        "rulesets/DataflowRulesDefault.ruleset",
+        "rulesets/DataflowRulesEnabled.ruleset",
+        "rulesets/LibraryRulesDefault.ruleset",
+        "rulesets/LibraryRulesEnabled.ruleset",
+        "rulesets/MicrosoftCodeAnalysisCompatibilityRulesDefault.ruleset",
+        "rulesets/MicrosoftCodeAnalysisCompatibilityRulesEnabled.ruleset",
+        "rulesets/MicrosoftCodeAnalysisCorrectnessRulesDefault.ruleset",
+        "rulesets/MicrosoftCodeAnalysisCorrectnessRulesEnabled.ruleset",
+        "rulesets/MicrosoftCodeAnalysisDesignRulesDefault.ruleset",
+        "rulesets/MicrosoftCodeAnalysisDesignRulesEnabled.ruleset",
+        "rulesets/MicrosoftCodeAnalysisDocumentationRulesDefault.ruleset",
+        "rulesets/MicrosoftCodeAnalysisDocumentationRulesEnabled.ruleset",
+        "rulesets/MicrosoftCodeAnalysisLocalizationRulesDefault.ruleset",
+        "rulesets/MicrosoftCodeAnalysisLocalizationRulesEnabled.ruleset",
+        "rulesets/MicrosoftCodeAnalysisPerformanceRulesDefault.ruleset",
+        "rulesets/MicrosoftCodeAnalysisPerformanceRulesEnabled.ruleset",
+        "rulesets/MicrosoftCodeAnalysisReleaseTrackingRulesDefault.ruleset",
+        "rulesets/MicrosoftCodeAnalysisReleaseTrackingRulesEnabled.ruleset",
+        "rulesets/PortedFromFxCopRulesDefault.ruleset",
+        "rulesets/PortedFromFxCopRulesEnabled.ruleset",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
+    "Microsoft.CodeAnalysis.Common/4.0.0": {
+      "sha512": "d02ybMhUJl1r/dI6SkJPHrTiTzXBYCZeJdOLMckV+jyoMU/GGkjqFX/sRbv1K0QmlpwwKuLTiYVQvfYC+8ox2g==",
+      "type": "package",
+      "path": "microsoft.codeanalysis.common/4.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "ThirdPartyNotices.rtf",
+        "lib/netcoreapp3.1/Microsoft.CodeAnalysis.dll",
+        "lib/netcoreapp3.1/Microsoft.CodeAnalysis.pdb",
+        "lib/netcoreapp3.1/Microsoft.CodeAnalysis.xml",
+        "lib/netcoreapp3.1/cs/Microsoft.CodeAnalysis.resources.dll",
+        "lib/netcoreapp3.1/de/Microsoft.CodeAnalysis.resources.dll",
+        "lib/netcoreapp3.1/es/Microsoft.CodeAnalysis.resources.dll",
+        "lib/netcoreapp3.1/fr/Microsoft.CodeAnalysis.resources.dll",
+        "lib/netcoreapp3.1/it/Microsoft.CodeAnalysis.resources.dll",
+        "lib/netcoreapp3.1/ja/Microsoft.CodeAnalysis.resources.dll",
+        "lib/netcoreapp3.1/ko/Microsoft.CodeAnalysis.resources.dll",
+        "lib/netcoreapp3.1/pl/Microsoft.CodeAnalysis.resources.dll",
+        "lib/netcoreapp3.1/pt-BR/Microsoft.CodeAnalysis.resources.dll",
+        "lib/netcoreapp3.1/ru/Microsoft.CodeAnalysis.resources.dll",
+        "lib/netcoreapp3.1/tr/Microsoft.CodeAnalysis.resources.dll",
+        "lib/netcoreapp3.1/zh-Hans/Microsoft.CodeAnalysis.resources.dll",
+        "lib/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.resources.dll",
+        "lib/netstandard2.0/Microsoft.CodeAnalysis.dll",
+        "lib/netstandard2.0/Microsoft.CodeAnalysis.pdb",
+        "lib/netstandard2.0/Microsoft.CodeAnalysis.xml",
+        "lib/netstandard2.0/cs/Microsoft.CodeAnalysis.resources.dll",
+        "lib/netstandard2.0/de/Microsoft.CodeAnalysis.resources.dll",
+        "lib/netstandard2.0/es/Microsoft.CodeAnalysis.resources.dll",
+        "lib/netstandard2.0/fr/Microsoft.CodeAnalysis.resources.dll",
+        "lib/netstandard2.0/it/Microsoft.CodeAnalysis.resources.dll",
+        "lib/netstandard2.0/ja/Microsoft.CodeAnalysis.resources.dll",
+        "lib/netstandard2.0/ko/Microsoft.CodeAnalysis.resources.dll",
+        "lib/netstandard2.0/pl/Microsoft.CodeAnalysis.resources.dll",
+        "lib/netstandard2.0/pt-BR/Microsoft.CodeAnalysis.resources.dll",
+        "lib/netstandard2.0/ru/Microsoft.CodeAnalysis.resources.dll",
+        "lib/netstandard2.0/tr/Microsoft.CodeAnalysis.resources.dll",
+        "lib/netstandard2.0/zh-Hans/Microsoft.CodeAnalysis.resources.dll",
+        "lib/netstandard2.0/zh-Hant/Microsoft.CodeAnalysis.resources.dll",
+        "microsoft.codeanalysis.common.4.0.0.nupkg.sha512",
+        "microsoft.codeanalysis.common.nuspec"
+      ]
+    },
+    "Microsoft.CodeAnalysis.CSharp/4.0.0": {
+      "sha512": "2UVTGtyQGgTCazvnT6t82f+7AV2L+kqJdyb61rT9GQed4yK+tVh5IkaKcsm70VqyZQhBbDqsfZFNHnY65xhrRw==",
+      "type": "package",
+      "path": "microsoft.codeanalysis.csharp/4.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "ThirdPartyNotices.rtf",
+        "lib/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.dll",
+        "lib/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.pdb",
+        "lib/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.xml",
+        "lib/netcoreapp3.1/cs/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "lib/netcoreapp3.1/de/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "lib/netcoreapp3.1/es/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "lib/netcoreapp3.1/fr/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "lib/netcoreapp3.1/it/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "lib/netcoreapp3.1/ja/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "lib/netcoreapp3.1/ko/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "lib/netcoreapp3.1/pl/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "lib/netcoreapp3.1/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "lib/netcoreapp3.1/ru/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "lib/netcoreapp3.1/tr/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "lib/netcoreapp3.1/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "lib/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "lib/netstandard2.0/Microsoft.CodeAnalysis.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CodeAnalysis.CSharp.pdb",
+        "lib/netstandard2.0/Microsoft.CodeAnalysis.CSharp.xml",
+        "lib/netstandard2.0/cs/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "lib/netstandard2.0/de/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "lib/netstandard2.0/es/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "lib/netstandard2.0/fr/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "lib/netstandard2.0/it/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "lib/netstandard2.0/ja/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "lib/netstandard2.0/ko/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "lib/netstandard2.0/pl/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "lib/netstandard2.0/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "lib/netstandard2.0/ru/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "lib/netstandard2.0/tr/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "lib/netstandard2.0/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "lib/netstandard2.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll",
+        "microsoft.codeanalysis.csharp.4.0.0.nupkg.sha512",
+        "microsoft.codeanalysis.csharp.nuspec"
+      ]
+    },
+    "Microsoft.CodeAnalysis.Razor/6.0.3": {
+      "sha512": "9rwIxrKQBlglWYWvR+oWZJf4pz5fExHaG15jiMf7VHRMYx7yqs3MJgfYFDsNXRQZD6gH0yHhyFh2yas6zC8KpQ==",
+      "type": "package",
+      "path": "microsoft.codeanalysis.razor/6.0.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netstandard2.0/Microsoft.CodeAnalysis.Razor.dll",
+        "microsoft.codeanalysis.razor.6.0.3.nupkg.sha512",
+        "microsoft.codeanalysis.razor.nuspec"
+      ]
+    },
+    "Microsoft.CSharp/4.7.0": {
+      "sha512": "pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
+      "type": "package",
+      "path": "microsoft.csharp/4.7.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1161,6 +2183,7 @@
         "lib/netcoreapp2.0/_._",
         "lib/netstandard1.3/Microsoft.CSharp.dll",
         "lib/netstandard2.0/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.xml",
         "lib/portable-net45+win8+wp8+wpa81/_._",
         "lib/uap10.0.16299/_._",
         "lib/win8/_._",
@@ -1170,7 +2193,7 @@
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
-        "microsoft.csharp.4.5.0.nupkg.sha512",
+        "microsoft.csharp.4.7.0.nupkg.sha512",
         "microsoft.csharp.nuspec",
         "ref/MonoAndroid10/_._",
         "ref/MonoTouch10/_._",
@@ -1288,6 +2311,26 @@
         "runtimes/win-arm64/native/Microsoft.Data.SqlClient.SNI.dll",
         "runtimes/win-x64/native/Microsoft.Data.SqlClient.SNI.dll",
         "runtimes/win-x86/native/Microsoft.Data.SqlClient.SNI.dll"
+      ]
+    },
+    "Microsoft.DotNet.PlatformAbstractions/3.1.6": {
+      "sha512": "jek4XYaQ/PGUwDKKhwR8K47Uh1189PFzMeLqO83mXrXQVIpARZCcfuDedH50YDTepBkfijCZN5U/vZi++erxtg==",
+      "type": "package",
+      "path": "microsoft.dotnet.platformabstractions/3.1.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net45/Microsoft.DotNet.PlatformAbstractions.dll",
+        "lib/net45/Microsoft.DotNet.PlatformAbstractions.xml",
+        "lib/netstandard1.3/Microsoft.DotNet.PlatformAbstractions.dll",
+        "lib/netstandard1.3/Microsoft.DotNet.PlatformAbstractions.xml",
+        "lib/netstandard2.0/Microsoft.DotNet.PlatformAbstractions.dll",
+        "lib/netstandard2.0/Microsoft.DotNet.PlatformAbstractions.xml",
+        "microsoft.dotnet.platformabstractions.3.1.6.nupkg.sha512",
+        "microsoft.dotnet.platformabstractions.nuspec"
       ]
     },
     "Microsoft.EntityFrameworkCore/8.0.0-preview.3.23174.2": {
@@ -1459,6 +2502,25 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Microsoft.Extensions.Configuration/6.0.1": {
+      "sha512": "BUyFU9t+HzlSE7ri4B+AQN2BgTgHv/uM82s5ZkgU1BApyzWzIl48nDsG5wR1t0pniNuuyTBzG3qCW8152/NtSw==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration/6.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Configuration.dll",
+        "lib/net461/Microsoft.Extensions.Configuration.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.xml",
+        "microsoft.extensions.configuration.6.0.1.nupkg.sha512",
+        "microsoft.extensions.configuration.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "Microsoft.Extensions.Configuration.Abstractions/8.0.0-preview.3.23174.8": {
       "sha512": "MWHtyuSmaspZcGbOQxdWEmUW9VAYpD+pN4YtApbE3tu1NFiWb7ooQNBPV/g6JgGhMAo3FSmTmaK8Cirg+8hxdw==",
       "type": "package",
@@ -1486,6 +2548,65 @@
         "lib/netstandard2.0/Microsoft.Extensions.Configuration.Abstractions.xml",
         "microsoft.extensions.configuration.abstractions.8.0.0-preview.3.23174.8.nupkg.sha512",
         "microsoft.extensions.configuration.abstractions.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.Binder/6.0.0": {
+      "sha512": "b3ErKzND8LIC7o08QAVlKfaEIYEvLJbtmVbFZVBRXeu9YkKfSSzLZfR1SUfQPBIy9mKLhEtJgGYImkcMNaKE0A==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.binder/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Configuration.Binder.dll",
+        "lib/net461/Microsoft.Extensions.Configuration.Binder.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.xml",
+        "microsoft.extensions.configuration.binder.6.0.0.nupkg.sha512",
+        "microsoft.extensions.configuration.binder.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.FileExtensions/6.0.0": {
+      "sha512": "V4Dth2cYMZpw3HhGw9XUDIijpI6gN+22LDt0AhufIgOppCUfpWX4483OmN+dFXRJkJLc8Tv0Q8QK+1ingT2+KQ==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.fileextensions/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Configuration.FileExtensions.dll",
+        "lib/net461/Microsoft.Extensions.Configuration.FileExtensions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.FileExtensions.xml",
+        "microsoft.extensions.configuration.fileextensions.6.0.0.nupkg.sha512",
+        "microsoft.extensions.configuration.fileextensions.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.Json/6.0.0": {
+      "sha512": "GJGery6QytCzS/BxJ96klgG9in3uH26KcUBbiVG/coNDXCRq6LGVVlUT4vXq34KPuM+R2av+LeYdX9h4IZOCUg==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.json/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/Microsoft.Extensions.Configuration.Json.dll",
+        "lib/net461/Microsoft.Extensions.Configuration.Json.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Json.xml",
+        "lib/netstandard2.1/Microsoft.Extensions.Configuration.Json.dll",
+        "lib/netstandard2.1/Microsoft.Extensions.Configuration.Json.xml",
+        "microsoft.extensions.configuration.json.6.0.0.nupkg.sha512",
+        "microsoft.extensions.configuration.json.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
@@ -1578,6 +2699,75 @@
         "lib/netstandard2.0/Microsoft.Extensions.DependencyModel.xml",
         "microsoft.extensions.dependencymodel.8.0.0-preview.3.23174.8.nupkg.sha512",
         "microsoft.extensions.dependencymodel.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.FileProviders.Abstractions/6.0.0": {
+      "sha512": "0pd4/fho0gC12rQswaGQxbU34jOS1TPS8lZPpkFCH68ppQjHNHYle9iRuHeev1LhrJ94YPvzcRd8UmIuFk23Qw==",
+      "type": "package",
+      "path": "microsoft.extensions.fileproviders.abstractions/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.FileProviders.Abstractions.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/Microsoft.Extensions.FileProviders.Abstractions.dll",
+        "lib/net461/Microsoft.Extensions.FileProviders.Abstractions.xml",
+        "lib/net6.0/Microsoft.Extensions.FileProviders.Abstractions.dll",
+        "lib/net6.0/Microsoft.Extensions.FileProviders.Abstractions.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Abstractions.xml",
+        "microsoft.extensions.fileproviders.abstractions.6.0.0.nupkg.sha512",
+        "microsoft.extensions.fileproviders.abstractions.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.FileProviders.Physical/6.0.0": {
+      "sha512": "QvkL7l0nM8udt3gfyu0Vw8bbCXblxaKOl7c2oBfgGy4LCURRaL9XWZX1FWJrQc43oMokVneVxH38iz+bY1sbhg==",
+      "type": "package",
+      "path": "microsoft.extensions.fileproviders.physical/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.FileProviders.Physical.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/Microsoft.Extensions.FileProviders.Physical.dll",
+        "lib/net461/Microsoft.Extensions.FileProviders.Physical.xml",
+        "lib/net6.0/Microsoft.Extensions.FileProviders.Physical.dll",
+        "lib/net6.0/Microsoft.Extensions.FileProviders.Physical.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.FileProviders.Physical.xml",
+        "microsoft.extensions.fileproviders.physical.6.0.0.nupkg.sha512",
+        "microsoft.extensions.fileproviders.physical.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.Extensions.FileSystemGlobbing/6.0.0": {
+      "sha512": "ip8jnL1aPiaPeKINCqaTEbvBFDmVx9dXQEBZ2HOBRXPD1eabGNqP/bKlsIcp7U2lGxiXd5xIhoFcmY8nM4Hdiw==",
+      "type": "package",
+      "path": "microsoft.extensions.filesystemglobbing/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.FileSystemGlobbing.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/Microsoft.Extensions.FileSystemGlobbing.dll",
+        "lib/net461/Microsoft.Extensions.FileSystemGlobbing.xml",
+        "lib/net6.0/Microsoft.Extensions.FileSystemGlobbing.dll",
+        "lib/net6.0/Microsoft.Extensions.FileSystemGlobbing.xml",
+        "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.FileSystemGlobbing.xml",
+        "microsoft.extensions.filesystemglobbing.6.0.0.nupkg.sha512",
+        "microsoft.extensions.filesystemglobbing.nuspec",
         "useSharedDesignerContext.txt"
       ]
     },
@@ -2013,6 +3203,321 @@
         "mono.texttemplating.nuspec"
       ]
     },
+    "MyTested.AspNetCore.Mvc.Abstractions/6.0.0": {
+      "sha512": "wJaEIrw0RXql03BEwZVwaZA5lLl2jv5JnVkCwUGa0FFzQpYuBeuFideHM90c8d6Y5ew+wbGCc4pFLOk45XCtmQ==",
+      "type": "package",
+      "path": "mytested.aspnetcore.mvc.abstractions/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/net6.0/MyTested.AspNetCore.Mvc.Abstractions.dll",
+        "lib/net6.0/MyTested.AspNetCore.Mvc.Abstractions.xml",
+        "mytested.aspnetcore.mvc.abstractions.6.0.0.nupkg.sha512",
+        "mytested.aspnetcore.mvc.abstractions.nuspec",
+        "nuget-logo.png"
+      ]
+    },
+    "MyTested.AspNetCore.Mvc.Configuration/6.0.0": {
+      "sha512": "7SMqS6GziliDjpFVWVrfnEYfKb0iBUOEL6lYe/neCBoYS7zxm329Izg6CC+K5zmwP3H0JstzBGrHXkuHMFHvUg==",
+      "type": "package",
+      "path": "mytested.aspnetcore.mvc.configuration/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/net6.0/MyTested.AspNetCore.Mvc.Configuration.dll",
+        "lib/net6.0/MyTested.AspNetCore.Mvc.Configuration.xml",
+        "mytested.aspnetcore.mvc.configuration.6.0.0.nupkg.sha512",
+        "mytested.aspnetcore.mvc.configuration.nuspec",
+        "nuget-logo.png"
+      ]
+    },
+    "MyTested.AspNetCore.Mvc.Controllers/6.0.0": {
+      "sha512": "0eBEEav+HutG/5RTiVspXQfo+f634Kh+SrrowS6JMvGR543MTX7pV/4vOxn7tpNmS8f/tRz86EWmwygOEAn46w==",
+      "type": "package",
+      "path": "mytested.aspnetcore.mvc.controllers/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/net6.0/MyTested.AspNetCore.Mvc.Controllers.dll",
+        "lib/net6.0/MyTested.AspNetCore.Mvc.Controllers.xml",
+        "mytested.aspnetcore.mvc.controllers.6.0.0.nupkg.sha512",
+        "mytested.aspnetcore.mvc.controllers.nuspec",
+        "nuget-logo.png"
+      ]
+    },
+    "MyTested.AspNetCore.Mvc.Controllers.ActionResults/6.0.0": {
+      "sha512": "zH1GScq35j1bMLn7RWZ2h3+u+qt36Dm0PRIdG1ShOGAvY2LlvElfGEFo5ESU5LykRxhsTd7CpYMNCHiIs6Wd2w==",
+      "type": "package",
+      "path": "mytested.aspnetcore.mvc.controllers.actionresults/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/net6.0/MyTested.AspNetCore.Mvc.Controllers.ActionResults.dll",
+        "lib/net6.0/MyTested.AspNetCore.Mvc.Controllers.ActionResults.xml",
+        "mytested.aspnetcore.mvc.controllers.actionresults.6.0.0.nupkg.sha512",
+        "mytested.aspnetcore.mvc.controllers.actionresults.nuspec",
+        "nuget-logo.png"
+      ]
+    },
+    "MyTested.AspNetCore.Mvc.Controllers.Attributes/6.0.0": {
+      "sha512": "M/pXTTKS3vkEvln60hNPD/+8wdx0ky1J202xmHbNU1OCYqW8Xk3oH/n/da8YJJ/P99oEpV5Pj1+J08URGAHb0A==",
+      "type": "package",
+      "path": "mytested.aspnetcore.mvc.controllers.attributes/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/net6.0/MyTested.AspNetCore.Mvc.Controllers.Attributes.dll",
+        "lib/net6.0/MyTested.AspNetCore.Mvc.Controllers.Attributes.xml",
+        "mytested.aspnetcore.mvc.controllers.attributes.6.0.0.nupkg.sha512",
+        "mytested.aspnetcore.mvc.controllers.attributes.nuspec",
+        "nuget-logo.png"
+      ]
+    },
+    "MyTested.AspNetCore.Mvc.Controllers.Views/6.0.0": {
+      "sha512": "7dygIs+DMkvG+CxzisbLjE26DLvPlFIVAuI8lhk6vwY82Ugq5TPmvkSnm5K0TT3mzKOOU2OAG/9n9axYrR9OaA==",
+      "type": "package",
+      "path": "mytested.aspnetcore.mvc.controllers.views/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/net6.0/MyTested.AspNetCore.Mvc.Controllers.Views.dll",
+        "lib/net6.0/MyTested.AspNetCore.Mvc.Controllers.Views.xml",
+        "mytested.aspnetcore.mvc.controllers.views.6.0.0.nupkg.sha512",
+        "mytested.aspnetcore.mvc.controllers.views.nuspec",
+        "nuget-logo.png"
+      ]
+    },
+    "MyTested.AspNetCore.Mvc.Controllers.Views.ActionResults/6.0.0": {
+      "sha512": "sW5rYlTSqtMVRuL4XZQypcGog/y05EVWUGdDt2vZPLM/j9eOb65njz6Kq7LJcS/GFsh74gyE86RTXmbkQv/5YA==",
+      "type": "package",
+      "path": "mytested.aspnetcore.mvc.controllers.views.actionresults/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/net6.0/MyTested.AspNetCore.Mvc.Controllers.Views.ActionResults.dll",
+        "lib/net6.0/MyTested.AspNetCore.Mvc.Controllers.Views.ActionResults.xml",
+        "mytested.aspnetcore.mvc.controllers.views.actionresults.6.0.0.nupkg.sha512",
+        "mytested.aspnetcore.mvc.controllers.views.actionresults.nuspec",
+        "nuget-logo.png"
+      ]
+    },
+    "MyTested.AspNetCore.Mvc.Core/6.0.0": {
+      "sha512": "miXwhBKaHQ24wJDRuF1F+p7clu2t1SVPDtlMWhsZpkYFDop7Vw4hivhnF2U4473K+lM0ewJaPQY9d1muAsoLiA==",
+      "type": "package",
+      "path": "mytested.aspnetcore.mvc.core/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/net6.0/MyTested.AspNetCore.Mvc.Core.dll",
+        "lib/net6.0/MyTested.AspNetCore.Mvc.Core.xml",
+        "mytested.aspnetcore.mvc.core.6.0.0.nupkg.sha512",
+        "mytested.aspnetcore.mvc.core.nuspec",
+        "nuget-logo.png"
+      ]
+    },
+    "MyTested.AspNetCore.Mvc.DataAnnotations/6.0.0": {
+      "sha512": "sJPN/aMQ0H0NVtR1i4HzpMUOV2Ve04oU8j+sZgPcNeLQR9e2zU0/ijeLqMQmpUMKMuao/NT53eQYfYgPO/ppzg==",
+      "type": "package",
+      "path": "mytested.aspnetcore.mvc.dataannotations/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/net6.0/MyTested.AspNetCore.Mvc.DataAnnotations.dll",
+        "lib/net6.0/MyTested.AspNetCore.Mvc.DataAnnotations.xml",
+        "mytested.aspnetcore.mvc.dataannotations.6.0.0.nupkg.sha512",
+        "mytested.aspnetcore.mvc.dataannotations.nuspec",
+        "nuget-logo.png"
+      ]
+    },
+    "MyTested.AspNetCore.Mvc.Helpers/6.0.0": {
+      "sha512": "z+BKqPL+imi0l4lx5vdNqUJPw2DcCxer09nkAxnRBrTOH0scJX41TvIomD1ZOG7LuEOKKfZAnb/l2RVdC7PzuQ==",
+      "type": "package",
+      "path": "mytested.aspnetcore.mvc.helpers/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/net6.0/MyTested.AspNetCore.Mvc.Helpers.dll",
+        "lib/net6.0/MyTested.AspNetCore.Mvc.Helpers.xml",
+        "mytested.aspnetcore.mvc.helpers.6.0.0.nupkg.sha512",
+        "mytested.aspnetcore.mvc.helpers.nuspec",
+        "nuget-logo.png"
+      ]
+    },
+    "MyTested.AspNetCore.Mvc.Http/6.0.0": {
+      "sha512": "BmCLtHg6UMhmafFSNFj45BOEHozTbfLff2Fp7nIMkgkMZxGcFqbja+TAjOY92AnPjcgtl1iI+sicOsVLLc2I5A==",
+      "type": "package",
+      "path": "mytested.aspnetcore.mvc.http/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/net6.0/MyTested.AspNetCore.Mvc.Http.dll",
+        "lib/net6.0/MyTested.AspNetCore.Mvc.Http.xml",
+        "mytested.aspnetcore.mvc.http.6.0.0.nupkg.sha512",
+        "mytested.aspnetcore.mvc.http.nuspec",
+        "nuget-logo.png"
+      ]
+    },
+    "MyTested.AspNetCore.Mvc.Models/6.0.0": {
+      "sha512": "IXxfnTtz2pR/ufnnCYwmdkX+JbZOgP/xmcNZ+2K7jS+2gEpUmlRG4dRc8GuWG6jLEdAntGVPtoll4Bh9DJleHQ==",
+      "type": "package",
+      "path": "mytested.aspnetcore.mvc.models/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/net6.0/MyTested.AspNetCore.Mvc.Models.dll",
+        "lib/net6.0/MyTested.AspNetCore.Mvc.Models.xml",
+        "mytested.aspnetcore.mvc.models.6.0.0.nupkg.sha512",
+        "mytested.aspnetcore.mvc.models.nuspec",
+        "nuget-logo.png"
+      ]
+    },
+    "MyTested.AspNetCore.Mvc.ModelState/6.0.0": {
+      "sha512": "+6RoL5GFO3xyeBp1cFJ8w4aKAzy6/FFniH+5y0BCIK+DlnaUfYsV5I5D2mrHNJF3oqy3BWuZ0KI9F4HXPNtM3g==",
+      "type": "package",
+      "path": "mytested.aspnetcore.mvc.modelstate/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/net6.0/MyTested.AspNetCore.Mvc.ModelState.dll",
+        "lib/net6.0/MyTested.AspNetCore.Mvc.ModelState.xml",
+        "mytested.aspnetcore.mvc.modelstate.6.0.0.nupkg.sha512",
+        "mytested.aspnetcore.mvc.modelstate.nuspec",
+        "nuget-logo.png"
+      ]
+    },
+    "MyTested.AspNetCore.Mvc.Pipeline/6.0.0": {
+      "sha512": "redoA93NXoyFPkiAUuIibIqSBWGdZYM/6DG3H33nqIh73Ugf9/wltHdZkL7Smu8YF+Zjazv5Jg6BRllKnNkBcA==",
+      "type": "package",
+      "path": "mytested.aspnetcore.mvc.pipeline/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/net6.0/MyTested.AspNetCore.Mvc.Pipeline.dll",
+        "lib/net6.0/MyTested.AspNetCore.Mvc.Pipeline.xml",
+        "mytested.aspnetcore.mvc.pipeline.6.0.0.nupkg.sha512",
+        "mytested.aspnetcore.mvc.pipeline.nuspec",
+        "nuget-logo.png"
+      ]
+    },
+    "MyTested.AspNetCore.Mvc.Razor.RuntimeCompilation/6.0.0": {
+      "sha512": "MPEoIRoO8LOxHUBHawqdfZYXKbGU1qCXpyrxyJTfLZSeWa53zZ1yOMNECMv997wTy0phE8mm1Vto8MGclFS6pg==",
+      "type": "package",
+      "path": "mytested.aspnetcore.mvc.razor.runtimecompilation/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/net6.0/MyTested.AspNetCore.Mvc.Razor.RuntimeCompilation.dll",
+        "lib/net6.0/MyTested.AspNetCore.Mvc.Razor.RuntimeCompilation.xml",
+        "mytested.aspnetcore.mvc.razor.runtimecompilation.6.0.0.nupkg.sha512",
+        "mytested.aspnetcore.mvc.razor.runtimecompilation.nuspec",
+        "nuget-logo.png"
+      ]
+    },
+    "MyTested.AspNetCore.Mvc.Routing/6.0.0": {
+      "sha512": "BgWvJjv2HVfhYAg00Dv1NSSZBJAJPCttCPHUgVZuMUW5Y8FYBU4hgXfFJVMtSB+vwfaQI3ceChO1Kt4UIBJjdg==",
+      "type": "package",
+      "path": "mytested.aspnetcore.mvc.routing/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/net6.0/MyTested.AspNetCore.Mvc.Routing.dll",
+        "lib/net6.0/MyTested.AspNetCore.Mvc.Routing.xml",
+        "mytested.aspnetcore.mvc.routing.6.0.0.nupkg.sha512",
+        "mytested.aspnetcore.mvc.routing.nuspec",
+        "nuget-logo.png"
+      ]
+    },
+    "MyTested.AspNetCore.Mvc.TempData/6.0.0": {
+      "sha512": "cf2tvWyPM1PaEKSnoZ3FrXnX32SGBEsUMAMvweHu3DGCFPN5LnwudKnu/LEqc20bLP9TTqlp5oAwG2YqIPCZQw==",
+      "type": "package",
+      "path": "mytested.aspnetcore.mvc.tempdata/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/net6.0/MyTested.AspNetCore.Mvc.TempData.dll",
+        "lib/net6.0/MyTested.AspNetCore.Mvc.TempData.xml",
+        "mytested.aspnetcore.mvc.tempdata.6.0.0.nupkg.sha512",
+        "mytested.aspnetcore.mvc.tempdata.nuspec",
+        "nuget-logo.png"
+      ]
+    },
+    "MyTested.AspNetCore.Mvc.ViewComponents/6.0.0": {
+      "sha512": "DjeiZ8RCxZJANgkhfpZGIllCo2ixJoLldGzgDliF1s55pmpnQX7omc0xW+uMj5dBM03eDxvl/e7raxqk4sZvkA==",
+      "type": "package",
+      "path": "mytested.aspnetcore.mvc.viewcomponents/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/net6.0/MyTested.AspNetCore.Mvc.ViewComponents.dll",
+        "lib/net6.0/MyTested.AspNetCore.Mvc.ViewComponents.xml",
+        "mytested.aspnetcore.mvc.viewcomponents.6.0.0.nupkg.sha512",
+        "mytested.aspnetcore.mvc.viewcomponents.nuspec",
+        "nuget-logo.png"
+      ]
+    },
+    "MyTested.AspNetCore.Mvc.ViewComponents.Results/6.0.0": {
+      "sha512": "1ZFrlCE0PzeWzeORvyRNjJlnaGTEAA4+L+Zx9GiM6TOIR2mee9ND2KnX6dTmygdcl9ffLMg/W1rAgpLAz4Eg1g==",
+      "type": "package",
+      "path": "mytested.aspnetcore.mvc.viewcomponents.results/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/net6.0/MyTested.AspNetCore.Mvc.ViewComponents.Results.dll",
+        "lib/net6.0/MyTested.AspNetCore.Mvc.ViewComponents.Results.xml",
+        "mytested.aspnetcore.mvc.viewcomponents.results.6.0.0.nupkg.sha512",
+        "mytested.aspnetcore.mvc.viewcomponents.results.nuspec",
+        "nuget-logo.png"
+      ]
+    },
+    "MyTested.AspNetCore.Mvc.ViewData/6.0.0": {
+      "sha512": "Jbzc8zjx82Grhp97eeLdSKk5hlDv1nOwOxDtfGJODOZda7iN/SZn2MrfUJkcY0gWwOJ0Yg+TJnEIGn+N/pHv2A==",
+      "type": "package",
+      "path": "mytested.aspnetcore.mvc.viewdata/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/net6.0/MyTested.AspNetCore.Mvc.ViewData.dll",
+        "lib/net6.0/MyTested.AspNetCore.Mvc.ViewData.xml",
+        "mytested.aspnetcore.mvc.viewdata.6.0.0.nupkg.sha512",
+        "mytested.aspnetcore.mvc.viewdata.nuspec",
+        "nuget-logo.png"
+      ]
+    },
+    "MyTested.AspNetCore.Mvc.ViewFeatures/6.0.0": {
+      "sha512": "Z6W3B1s9cS/CWnvBv5aO1R/98987oB1qvcM+oPiuQine78rnJGzAcvJ3pcvD2jQRpU399a267wl6kLHq3OL8mA==",
+      "type": "package",
+      "path": "mytested.aspnetcore.mvc.viewfeatures/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "lib/net6.0/MyTested.AspNetCore.Mvc.ViewFeatures.dll",
+        "lib/net6.0/MyTested.AspNetCore.Mvc.ViewFeatures.xml",
+        "mytested.aspnetcore.mvc.viewfeatures.6.0.0.nupkg.sha512",
+        "mytested.aspnetcore.mvc.viewfeatures.nuspec",
+        "nuget-logo.png"
+      ]
+    },
     "System.CodeDom/4.4.0": {
       "sha512": "2sCCb7doXEwtYAbqzbF/8UAeDRMNmPaQbU2q50Psg1J9KzumyVVCgKQY8s53WIPTufNT0DpSe9QRvVjOzfDWBA==",
       "type": "package",
@@ -2030,6 +3535,32 @@
         "ref/netstandard2.0/System.CodeDom.xml",
         "system.codedom.4.4.0.nupkg.sha512",
         "system.codedom.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Collections.Immutable/5.0.0": {
+      "sha512": "FXkLXiK0sVVewcso0imKQoOxjoPAj42R8HtjjbSjVPAzwDfzoyoznWxgA3c38LDbN9SJux1xXoXYAhz98j7r2g==",
+      "type": "package",
+      "path": "system.collections.immutable/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Collections.Immutable.dll",
+        "lib/net461/System.Collections.Immutable.xml",
+        "lib/netstandard1.0/System.Collections.Immutable.dll",
+        "lib/netstandard1.0/System.Collections.Immutable.xml",
+        "lib/netstandard1.3/System.Collections.Immutable.dll",
+        "lib/netstandard1.3/System.Collections.Immutable.xml",
+        "lib/netstandard2.0/System.Collections.Immutable.dll",
+        "lib/netstandard2.0/System.Collections.Immutable.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.xml",
+        "system.collections.immutable.5.0.0.nupkg.sha512",
+        "system.collections.immutable.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
@@ -2164,6 +3695,31 @@
         "system.identitymodel.tokens.jwt.nuspec"
       ]
     },
+    "System.IO.Pipelines/6.0.2": {
+      "sha512": "cb5OfQjnz+zjpJJei+f3QYK7+wWZrDdNHf3DykO6QCacpNZ80tuNgq1DC2kqlrjfEu+cMUTvulxPIrCMbBkjqg==",
+      "type": "package",
+      "path": "system.io.pipelines/6.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/netcoreapp2.0/System.IO.Pipelines.targets",
+        "buildTransitive/netcoreapp3.1/_._",
+        "lib/net461/System.IO.Pipelines.dll",
+        "lib/net461/System.IO.Pipelines.xml",
+        "lib/net6.0/System.IO.Pipelines.dll",
+        "lib/net6.0/System.IO.Pipelines.xml",
+        "lib/netcoreapp3.1/System.IO.Pipelines.dll",
+        "lib/netcoreapp3.1/System.IO.Pipelines.xml",
+        "lib/netstandard2.0/System.IO.Pipelines.dll",
+        "lib/netstandard2.0/System.IO.Pipelines.xml",
+        "system.io.pipelines.6.0.2.nupkg.sha512",
+        "system.io.pipelines.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "System.Memory/4.5.4": {
       "sha512": "1MbJTHS1lZ4bS4FmsJjnuGJOu88ZzTT2rLvrhW7Ygic+pC0NWA+3hgAen0HRdsocuQXCkUTdFn9yHJJhsijDXw==",
       "type": "package",
@@ -2248,6 +3804,30 @@
         "ref/xamarinwatchos10/_._",
         "system.numerics.vectors.4.5.0.nupkg.sha512",
         "system.numerics.vectors.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Reflection.Metadata/5.0.0": {
+      "sha512": "5NecZgXktdGg34rh1OenY1rFNDCI8xSjFr+Z4OU4cU06AQHUdRnIIEeWENu3Wl4YowbzkymAIMvi3WyK9U53pQ==",
+      "type": "package",
+      "path": "system.reflection.metadata/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net461/System.Reflection.Metadata.dll",
+        "lib/net461/System.Reflection.Metadata.xml",
+        "lib/netstandard1.1/System.Reflection.Metadata.dll",
+        "lib/netstandard1.1/System.Reflection.Metadata.xml",
+        "lib/netstandard2.0/System.Reflection.Metadata.dll",
+        "lib/netstandard2.0/System.Reflection.Metadata.xml",
+        "lib/portable-net45+win8/System.Reflection.Metadata.dll",
+        "lib/portable-net45+win8/System.Reflection.Metadata.xml",
+        "system.reflection.metadata.5.0.0.nupkg.sha512",
+        "system.reflection.metadata.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
@@ -2915,7 +4495,8 @@
     "net6.0": [
       "Microsoft.EntityFrameworkCore >= 8.0.0-preview.3.23174.2",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.0-preview.3.23174.2",
-      "Microsoft.EntityFrameworkCore.Tools >= 8.0.0-preview.3.23174.2"
+      "Microsoft.EntityFrameworkCore.Tools >= 8.0.0-preview.3.23174.2",
+      "MyTested.AspNetCore.Mvc.Razor.RuntimeCompilation >= 6.0.0"
     ]
   },
   "packageFolders": {
@@ -2968,6 +4549,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[8.0.0-preview.3.23174.2, )"
+          },
+          "MyTested.AspNetCore.Mvc.Razor.RuntimeCompilation": {
+            "target": "Package",
+            "version": "[6.0.0, )"
           }
         },
         "imports": [

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XlSynbgUNhgVTBjHQVWqfP9kAZH/xKhA1Ja5ovV43Jw=",
+  "Hash": "JiGm3vjmXCOS7NxEAoGefyHGhMNQy4iMoikmBZHkbOU=",
   "Source": "BulkyBookWeb",
   "BasePath": "_content/BulkyBookWeb",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/home/bs653/c#projects/BulkyBook/BulkyBookWeb/obj/Debug/net6.0/scopedcss/projectbundle/BulkyBookWeb.bundle.scp.css"
+    },
+    {
+      "Identity": "/home/bs653/c#projects/BulkyBook/BulkyBookWeb/wwwroot/css/bootstrapTheme.css",
+      "SourceId": "BulkyBookWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "/home/bs653/c#projects/BulkyBook/BulkyBookWeb/wwwroot/",
+      "BasePath": "_content/BulkyBookWeb",
+      "RelativePath": "css/bootstrapTheme.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/bootstrapTheme.css"
     },
     {
       "Identity": "/home/bs653/c#projects/BulkyBook/BulkyBookWeb/wwwroot/css/site.css",
