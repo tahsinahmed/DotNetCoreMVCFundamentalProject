@@ -1,0 +1,30 @@
+@model Category
+
+<form method="post">
+    <fieldset>
+        <legend>Update Category</legend>
+        <div asp-validation-summary="All" class="text-danger">
+      
+        </div>
+        <div class="form-group">
+            <label asp-for="Name" class="form-label mt-4"></label>
+            <input asp-for="Name" disabled class="form-control">
+        </div>
+        <div class="form-group">
+            <label asp-for="DisplayOrder" class="form-label mt-4"></label>
+            <input asp-for="DisplayOrder" disabled class="form-control">
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary text-end">Delete</button>
+        <a asp-controller="Category" asp-action="Index" class="btn btn-secondary">
+            Back To List
+        </a>
+    </fieldset>
+</form>
+
+@section Scripts
+{
+    @{
+        <partial name="_ValidationScriptsPartial"/>
+    }
+}
